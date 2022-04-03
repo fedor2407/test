@@ -1,0 +1,85 @@
+<html lang="en" class="">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <style>
+            body{
+                background-color: #bababa;
+                text-align: center;
+            }
+            .cell{
+                display: inline-block;
+                font-size: 34px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .bt{
+                width: 80px;
+                height: 40px;
+                font-size: 30px;
+            }
+            .wrapper{
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 8px 4px 8px;
+                flex-direction: column;
+                background-color: white;
+                border: 2px solid black;
+            }
+            .block {
+                display: flex;
+                justify-content: center;
+            }
+            .block__header {
+                font-size: 30px;
+                font-weight: lighter;
+                color: black;
+                margin: 16px 0 24px 0;
+                border: 2px solid black;
+            }
+            .block__content {
+                display: flex;
+                justify-content: space-between;
+            }
+            .block__content-text {
+                font-size: 20px;
+                line-height: 1.4em;
+                color: rgb(49,64,63);
+                margin-right: 16px;
+                margin-left: 42px;
+                line-height: 1.88em;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+            }
+            .go{
+                font-size: 70px;
+                background-color: grey;
+                margin-right: auto;
+            }
+            .difficultyBtn{
+                height: 34px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="block" id="block">
+            <div id="main" class="wrapper wrapper_vertical">
+                <h1 class="block__header" >
+                    Добро пожаловать в мир сапера</h1>
+                <div> 
+                <div class="block__content">
+                    <div class="block__content-text">
+                        <input id="now" class="difficultyBtn" type="button" value="      новичок 8х8 - 10мин">
+                        <input id="lub" class="difficultyBtn" type="button" value="     любитель 16х16 40мин">
+                        <input id="pro" class="difficultyBtn" type="button" value=" профессионал 30х16 99мин">
+                    </div>
+                    <input id="go" class="go" type="button" value="Go">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="row"> </div>
+        <script src="index.js"></script>
+    </body>
+</html>
